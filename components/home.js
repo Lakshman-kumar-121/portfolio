@@ -1,28 +1,22 @@
 import styles from '../styles/Home.module.css';
+import { AiOutlineTwitter, AiOutlineInstagram, AiOutlineWhatsApp ,AiOutlineSend } from 'react-icons/ai';
+import { BiLogoLinkedin } from 'react-icons/bi';
 const HomeCont = () => {
     return (
-        <div>
-            <div className={styles.text}>
-                <p className={styles.h}>
-                    Hello     !!!
-                </p>
-                <p className={styles.intr}>
-                    I'm Lakshman
-                </p>
-                <div className={styles.fsd}>
-                    SOFTWARE & FULL STACK DEVELOPER
-                </div>
-                <div className={styles.myself}>
-                    I am a fast learner and exceptional problem solver, adept
-                    at quickly absorbing information and finding innovative
-                    solutions. With a keen analytical mindset, I thrive in
-                    dynamic environments and embrace challenges with
-                    enthusiasm. Committed to continuous growth, I bring a
-                    resilient and adaptable approach to every task,
-                    consistently delivering outstanding results                </div>
-            </div>
-            <hr className="hl" />
-        </div>
+        <div className={styles.bg}>
+            <div className={styles.soft}>SOFTWARE DEVELOPER</div>
+            <div className={styles.hey} >Hey! I Am </div>
+            <div className={styles.lak} >Lakshman K </div>
+            <div className={styles.dis}>A skilled software developer is a digital architect, orchestrating intricate code to build innovative applications that drive the modern world. They blend creativity and logic to solve complex problems, creating user-friendly software that transforms ideas into tangible, functional, and reliable digital experiences. They're the architects of our tech-driven future.</div>
+            <button class={styles.hme}>HIRE ME <AiOutlineSend fontSize={15} ></AiOutlineSend> </button>
+            <div className={styles.flme}>Follow me:</div>
+            <a href="">        <AiOutlineTwitter className={styles.log} />
+            </a>        <a href=""><AiOutlineInstagram className={styles.log}></AiOutlineInstagram></a>
+            <a href="">        <AiOutlineWhatsApp className={styles.log}></AiOutlineWhatsApp>
+            </a>
+            <a href="">
+                <BiLogoLinkedin className={styles.log}></BiLogoLinkedin>
+            </a>       </div>
     );
 }
 

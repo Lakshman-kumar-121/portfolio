@@ -1,0 +1,29 @@
+.navbar{
+    background-color: #0D012C;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+.prodev{
+    color: greenyellow;
+    font-size: 20px;
+}
+.navicon{
+    font-family: Share Tech Mono,monospace;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0px 20px;
+    text-decoration: none;
+}
+
+.ctnbtn{
+    background-color: #59C378;
+    padding: 15px 20px;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+    color: white;
+}

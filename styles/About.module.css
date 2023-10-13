@@ -1,46 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&display=swap');
-
-.txts{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.aboutme{
+ background-color: #0D012C;
+ height: 100vh;
+ width: 98vw;   
 }
-.first{
-    font-size: 50px;
-    margin-top: 20vh;
-    margin-bottom: 0px;
+.img{
+    width: 40vw;;
+}
+.divde{
+    font-family: poppins,sans-serif!important;
+    padding: 90px 20px;
     color: white;
-    font-family: 'League Spartan';
-}
-.outer{
-    color: whitesmoke;
-    background-image: url('../public/img.png');
-    height: 100vh;
-    width: 100vw;
-}
-.second{
-    color: #38B6FF;
-    margin: 0px;
-    font-size: 20px;
-    font-style: italic;
-    margin-bottom: 20px;
-}
-.img img{
-    height: 15vh;
-}
-.logo
-{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    
+    justify-content: space-around;
 }
-.content{
-    font-size: 20px;
-    font-family: 'League Spartan';
-    font-weight: 800;
-    margin: 10px 0px;
+.texts{
+    width: 40vw;
 }
-.discription{
+.aboutus{
+    color: #59C378;
+    font-weight: 550;
+    font-size: 17px;
+    padding: 20px 0px;
+}
+.whyhme{
+    font-size: 28px;
+    font-weight: 500;
+    width: 30vw;
+    padding: 5px 0px;
+}
+.dwncv{
+    margin: 020px 0px;
+    letter-spacing: 1.1px;
+    border-radius: 10px;
+    border: none;
+    background-color: #59C378;
+    padding: 18px 38px;
+}
+.dis{
+    color: rgba(255, 255, 255, 0.81);
+    line-height: 150%;
+    padding: 8px 0px;
     font-size: 15px;
 }

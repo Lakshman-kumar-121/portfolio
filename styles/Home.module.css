@@ -1,47 +1,71 @@
-
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&display=swap');
-
-.bgimg{
-
-  background-image: url('../public/img.png');
-  height: 100vh;
-  width: 100vw;
-
-  background-repeat: no-repeat;
-  background-size: cover;
+.bg{
+    background-color: #110A3C;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px 5vw;
 }
-.h{
-  margin-top: 20vh;
-  color: #38B6FF;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 17px;
+.soft{
+    margin: 10px 0px;
+    color: #DADC13;
+font-weight: 500;
+font-size: 14px;
+font-family: Jost,sans-serif!important;
 }
-.intr{
-  margin-top: 30px;
-  font-size: 65px;
-  height: 10px;
-  color: white;
-  font-family: 'League Spartan' , 'sans-serif';
+.hey{
+    margin: 10px 0px;
+    color: White;
+    font-family: Jost,sans-serif!important;
+    font-size: 40px;
+    font-weight: 600;
 }
-.fsd{
-  color: #161616;
-  background-color: #38B6FF;
-  height: 20px ;
-  width: fit-content;
-  padding: 3px 10px;
-  font-size: 17px;
-  font-style: italic;
-  font-weight: 600;
+.lak{
+    font-family: Jost,sans-serif!important;
+    margin : 10px 0px;
+    background-image: linear-gradient(90deg, #DB4C63, #B069CF, #1DACD7); 
+    -webkit-background-clip: text;
+    display: inline-block;
+    color: transparent;
+    text-fill-color: transparent; 
+    font-size: 50px;
+    font-weight: 600;
 }
-.myself{
-  margin-top: 30px;
-  color: white;
-  width: 50vw;
-  font-size: 18px;
-  margin-bottom: 100px;
+.dis{
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 150%;
+    font-weight: 400;
+    font-family: Jost,sans-serif!important;
+    width: 50vw;
+}
+.hme{
+    display: inline-block;
+    padding: 20px 45px;
+    background-image: linear-gradient(90deg, #DB4C63, #B069CF, #1DACD7); 
+    color: #fff;
+    font-size: 14px;
+        border: none;
+        margin:20px 0px ;
+    font-family: poppins,sans-serif!important;
+    border-radius: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1.2px;
+    
+}
+.flme{
+    padding-top: 30px;
+    padding-bottom: 15px;
+    color: white;
+}
+.hme:hover{
+    background-image: linear-gradient(90deg , #59C378 ,#59C378  ); 
+    
 }
 
-.text{
-  padding-left: 07vw;
+.log{
+   margin: 5px 10px 5px 0px;
+    font-size: 25px;
+    color: white;
+    border: 2px solid #AA8589;
+    border-radius: 100%;
+    padding: 5px;
 }

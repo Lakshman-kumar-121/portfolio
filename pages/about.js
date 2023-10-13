@@ -1,8 +1,8 @@
-import Gettouch from "@/components/touch";
+import Aboutme from "@/components/aboutme";
 
 const About = () => {
     return ( 
-        <Gettouch/>
+        <Aboutme/>
      );
 }
  
