@@ -1,0 +1,86 @@
+.cntbg{
+    background-color: #0D012C;
+    width: 98vw;
+}
+.hd{
+    font-family: poppins,sans-serif!important;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.fst{
+color:#59C378 ;
+font-size: 15px;
+font-weight: 400;
+}
+.cnt{
+    padding: 10px;
+    font-size: 40px;
+}
+.ssec{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+.clog{
+    border-radius: 50%;
+    background-color: #FCDCDC;
+    color: #F2736A;
+    font-size: 25px;
+    padding: 30px;
+}
+.log{
+    font-family: poppins,sans-serif!important;
+    color: white;
+
+}
+.onelogsec{
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    
+}
+.lhd{
+    font-weight: 600;
+    font-size:22px;
+    padding: 5px 10px;
+}
+.ds{
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 16px;
+    padding: 0px 10px;
+
+}
+
+.loc{
+    background-color: #DDD6FA;
+    color: #8B71E9;
+}
+.mail{
+    background-color: #DDF5E6;
+    color: #79CE47;
+}
+.input{
+    background-color: #14143A;
+    width: 300px;
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 8px;
+    margin: 10px;
+}
+.sub{
+    width: 657px;
+}
+.sendbtn{
+    margin: 020px 10px;
+    letter-spacing: 1.1px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    background-color: #59C378;
+    padding: 18px 25px;
+}

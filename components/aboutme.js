@@ -12,7 +12,7 @@ const Aboutme = () => {
                     </div>
                     <div className={styles.dis}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, perferendis repellendus modi repellat debitis, eum, similique molestias consequatur reiciendis quisquam neque dolorem aspernatur! Iusto minus aliquid suscipit quas optio voluptatem vitae dolores debitis corrupti, nihil pariatur officia asperiores unde, ea praesentium aspernatur delectus soluta atque est! Ex voluptate dolorum officiis.</div>
                     <div className={styles.dis}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi consequuntur eum corporis nemo ut excepturi, sint dolore assumenda inventore quo?</div>
-                    <button className={styles.dwncv}>DOWNLOAD CV <BsDownload></BsDownload></button>
+                    <button className={styles.dwncv} onClick={()=>{alert("btn clicled")}}>DOWNLOAD CV <BsDownload></BsDownload></button>
                 </div>
                 
             </div>

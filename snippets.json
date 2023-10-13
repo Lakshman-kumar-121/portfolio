@@ -1,0 +1,7 @@
+{
+    "next": {
+      "snippets": {
+        "divs": "<div className={styles.class}> </div>"
+      }
+    }
+  }
