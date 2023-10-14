@@ -1,0 +1,27 @@
+.skbg{
+    color: white;
+    background-color: #0D012C;
+    width: 98vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: poppins,sans-serif!important;
+
+}
+.myskil{
+    color:#59C378 ;
+font-size: 15px;
+font-weight: 400;
+}
+.mysl{
+    padding: 10px;
+    font-size: 40px;
+    color: white;
+    font-weight: 520;
+}
+.crls{
+    width:100%;
+    margin: auto;
+    color: white;
+}
+  
