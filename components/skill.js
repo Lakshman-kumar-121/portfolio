@@ -76,17 +76,7 @@ const Skill = () => {
         <div className={styles.myskil}>MY SKILLS PROGRESS SO FAR</div>
         <div className={styles.mysl}>My Skills</div>
   
-        <AliceCarousel items={items}
-        infinite
         
-        autoPlay
-        disableButtonsControls
-        disableDotsControls
-        mouseTracking
-                autoPlayInterval={1000}
-                
-               
-        />
       </div>
     );
   };
