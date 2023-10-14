@@ -60,16 +60,7 @@ const Skill = () => {
                                 } 
     ];
 
-    const responsive = {
-        0: {
-          items: 1,
-        },
-        380: {
-          items: 4,
-        },
-        
-       
-      };
+ 
     
     const items = lan?.map((details4) => {
         return (
@@ -94,7 +85,7 @@ const Skill = () => {
         mouseTracking
                 autoPlayInterval={1000}
                 
-                responsive={responsive}
+               
         />
       </div>
     );
