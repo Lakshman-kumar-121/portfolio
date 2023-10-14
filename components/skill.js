@@ -1,6 +1,4 @@
 import styles from '../styles/Skill.module.css';
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
 
   
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
