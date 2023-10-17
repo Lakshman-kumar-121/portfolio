@@ -25,3 +25,50 @@ font-weight: 400;
     color: white;
 }
   
+.bx{
+    background-color: #14143A;
+    height: 180px;
+    width: 200px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;    
+}
+.bxshow{
+    /* background-color: aqua; */
+    padding: 20px ;
+    display: flex;
+    justify-content: center;
+    width: 92vw;
+
+}
+.lang{
+    font-weight: 600;
+    margin: 10px;
+}
+.skill {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 2px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.lvl {
+    color: #B0756A;
+}
+
+.int {
+    color: #B76CAD;
+}
+
+.beg {
+    color: #B8A46C;
+}
+
+.im{
+    width: 100px;
+    margin: 5px;
+}

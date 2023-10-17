@@ -13,13 +13,13 @@ const Skill = () => {
     },{
     'lang' : 'Java', 
     'image' : 'abc.png',
-    'experience' : 'Junior',
+    'experience' : 'Intermidiate',
         id : 1
     } ,
     {
         'lang' : 'Java', 
         'image' : 'abc.png',
-        'experience' : 'Junior',
+        'experience' : 'Beginner',
             id : 2
         }  ,
         {
@@ -31,13 +31,13 @@ const Skill = () => {
             {
                 'lang' : 'Java', 
                 'image' : 'abc.png',
-                'experience' : 'Junior',
+                'experience' : 'Intermidiate',
                     id : 4
                 } ,
                 {
                     'lang' : 'Java', 
                     'image' : 'abc.png',
-                    'experience' : 'Junior',
+                    'experience' : 'Beginner',
                         id : 5
                     } ,
                     {
@@ -49,7 +49,7 @@ const Skill = () => {
                         {
                             'lang' : 'Java', 
                             'image' : 'abc.png',
-                            'experience' : 'Junior',
+                            'experience' : 'Intermidiate',
                                 id : 7
                             } ,
                             {
@@ -60,12 +60,24 @@ const Skill = () => {
                                 } 
         // Add more skill objects here
     ];
+    function getStyleForExperience(experience) {
+        switch (experience) {
+            case 'Junior':
+                return styles.lvl;
+            case 'Intermidiate':
+                return styles.int;
+            case 'Beginner':
+                return styles.beg;
+            default:
+                return ''; 
+        }
+    }
 
     const skillItems = lan.map((skill) => (
-        <div key={skill.id}>
-            <div>{skill.id}</div>
-            
-            {/* Add any additional information you want to display for each skill */}
+        <div key={skill.id} className={styles.bx}>
+            <img src="img.png" alt="" className={styles.im}  width='100px'/>
+            <div className={styles.lang}>{skill.lang}</div>
+            <div className={`${styles.skill} ${getStyleForExperience(skill.experience)}`}>{skill.experience}</div>
         </div>
     ));
     const [isClient, setIsClient] = useState(false);
@@ -101,7 +113,7 @@ const Skill = () => {
           items: 6,
         },
         1265: {
-          items: 4,
+          items: 6,
         },
       };
 
@@ -109,15 +121,18 @@ const Skill = () => {
         <div className={styles.skbg}>
             <div className={styles.myskil}>MY SKILLS PROGRESS SO FAR</div>
             <div className={styles.mysl}>My Skills</div>
+            <div className={styles.bxshow}>
             <AliceCarousel
                 infinite
                 disableButtonsControls
                 autoPlay
                 mouseTracking
+                disableDotsControls
                 autoPlayInterval={1000}
                 responsive={responsive}
                 items={skillItems}
             />
+            </div>
         </div>
     );
 };
