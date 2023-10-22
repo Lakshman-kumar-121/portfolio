@@ -73,7 +73,7 @@ font-weight: 400;
     margin: 10px;
 }
 .sub{
-    width: 657px;
+    width: 100%;
 }
 .sendbtn{
     margin: 020px 10px;
@@ -84,4 +84,7 @@ font-weight: 400;
     font-size: 15px;
     background-color: #59C378;
     padding: 18px 25px;
+}
+.frm{
+    padding: 0px 30px;
 }
