@@ -11,11 +11,11 @@ const Mywork = () => {
   const responsive = {
     0: { items: 1 },
     380: { items: 1 },
-    512: { items: 2 },
-    665: { items: 3 },
-    767: { items: 3 },
-    870: { items: 4 },
-    1024: { items: 6 },
+    512: { items: 1 },
+    665: { items: 2 },
+    767: { items: 2 },
+    870: { items: 2 },
+    1050: { items: 3 },
     1265: { items: 3 },
   };
   
@@ -59,7 +59,7 @@ const Mywork = () => {
   };
 
   return (
-    <div className={styles.bgs}>
+    <div className={styles.bgs} id="My work">
       <AliceCarousel
         infinite
         disableButtonsControls

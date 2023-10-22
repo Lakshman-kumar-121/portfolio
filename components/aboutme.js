@@ -7,7 +7,7 @@ const Aboutme = () => {
         "Lakshman_cv.pdf")
     }
     return (  
-        <div className={styles.aboutme}>
+        <div className={styles.aboutme} id='About'>
             <div className={styles.divde}>
                 <img className={styles.img} src="mailcong.svg" alt="" />
                 <div className={styles.texts}>

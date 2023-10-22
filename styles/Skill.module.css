@@ -1,7 +1,7 @@
 .skbg{
     color: white;
     background-color: #0D012C;
-    width: 98vw;
+
     margin: 0px;
     display: flex;
     align-items: center;
@@ -29,7 +29,7 @@ font-weight: 400;
 .bx{
     background-color: #14143A;
     height: 180px;
-    width: 200px;
+    width: 210px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -39,7 +39,8 @@ font-weight: 400;
 }
 .bxshow{
     /* background-color: aqua; */
-    padding: 20px ;
+    padding-top: 30px ;
+    padding-bottom: 100px;
     display: flex;
     justify-content: center;
     width: 92vw;

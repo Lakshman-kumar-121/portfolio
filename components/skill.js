@@ -36,7 +36,7 @@ const Skill = () => {
   }
 
   const skillItems = myData.map((skill) => (
-    <div key={skill.id} className={styles.bx}>
+    <div key={skill.id} className={styles.bx} >
       <img src={skill.Image} alt="" className={styles.im} width="100px" />
       <div className={styles.lang}>{skill.Name}</div>
       <div className={`${styles.skill} ${getStyleForExperience(skill.Level)}`}>{skill.Level}</div>
@@ -54,12 +54,12 @@ const Skill = () => {
     665: { items: 3 },
     767: { items: 3 },
     870: { items: 4 },
-    1024: { items: 6 },
+    1050: { items: 5 },
     1265: { items: 6 },
   };
 
   return (
-    <div className={styles.skbg}>
+    <div className={styles.skbg} id="Skill">
       <div className={styles.myskil}>MY SKILLS PROGRESS SO FAR</div>
       <div className={styles.mysl}>My Skills</div>
       <div className={styles.bxshow}>

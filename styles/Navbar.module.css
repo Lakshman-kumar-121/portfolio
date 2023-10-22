@@ -10,12 +10,17 @@
     color: greenyellow;
     font-size: 20px;
 }
+.navs{
+    display: flex;
+
+}
 .navicon{
     font-family: Share Tech Mono,monospace;
     color: white;
     font-size: 15px;
     font-weight: 600;
-    padding: 0px 20px;
+    padding: 0px 1.5vw;
+    cursor: pointer ;
     text-decoration: none;
 }
 
