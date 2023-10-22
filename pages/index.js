@@ -1,16 +1,24 @@
 
 import '../styles/Home.module.css';
 import HomeCont from '@/components/home';
-import Navbar from '@/components/navbar';
+import Aboutme from '@/components/aboutme';
+import Skill from '@/components/skill';
+import Mywork from '@/components/work';
+import Contactme from '@/components/contactm';
+
 export default function Home() {
   return (
     <div>
-      <Navbar/>
       <HomeCont></HomeCont>
+      <Aboutme></Aboutme>
+      <Skill/>
+      <Mywork/>
+      <Contactme/>
 
     </div>
         
       
+        
     
   )
 }

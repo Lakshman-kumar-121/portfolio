@@ -1,7 +1,8 @@
 import Skills from '@/components/skill';
 const Skill = () => {
     return ( 
-        <Skills></Skills>
+         <Skills></Skills>
+        
      );
 }
  

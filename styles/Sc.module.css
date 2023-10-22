@@ -15,3 +15,45 @@
   .visible {
     display: block;
   }
+  .them{
+    width: 0px;
+    margin-left: -3px;
+    height: 0px;
+    visibility: hidden;
+    
+  }
+
+  
+  .dark {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    color: yellow;
+    position: fixed;
+    bottom: 20px;
+    right: 80px;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    border: 2px solid white;
+  }
+  .light{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    background-color: white;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    color: black;
+    position: fixed;
+    bottom: 20px;
+    right: 80px;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    border: 2px solid black;
+  }
+  
+
