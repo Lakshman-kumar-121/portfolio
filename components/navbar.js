@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import styles from '../styles/Navbar.module.css';
-import { AiFillGithub } from 'react-icons/ai';
+import { AiFillGithub ,AiOutlineMenu } from 'react-icons/ai';
 const NavBar = () => {
 
     const scrollToTop = (e) => {
@@ -27,6 +27,7 @@ const NavBar = () => {
                 <AiFillGithub color='white'> </AiFillGithub>
                 <button className={styles.ctnbtn}>Contact Me</button>
             </div>
+            <AiOutlineMenu className={styles.menu}/>
         </div>
     );
 }

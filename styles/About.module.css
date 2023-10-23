@@ -45,7 +45,7 @@
 }
 @media (max-width: 767px) {
     .aboutme{
-        height: 100em;
+        height: 62.5em;
     }
     .divde{
         flex-direction: column;
@@ -58,7 +58,7 @@
         width: 70vw;
     }
     .whyhme{
-        width: 80vw;
+        width: 70vw;
     }
 
     

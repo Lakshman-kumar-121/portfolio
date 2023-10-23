@@ -32,3 +32,19 @@
     border-radius: 5px;
     color: white;
 }
+.menu{
+    display: none;
+}
+@media (max-width : 767px) {
+    .navs{
+        display: none;
+    }
+    .menu{
+        display: initial;
+        color: white;
+        font-size: 32px;
+        cursor: pointer;
+
+    }
+    
+}
