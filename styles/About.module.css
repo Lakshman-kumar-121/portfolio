@@ -1,6 +1,5 @@
 .aboutme{
-    /* min-width: 10em; */
-    width: 100vw;
+    
  background-color: #0D012C;
  height: 42em;
 }
@@ -43,4 +42,24 @@
     line-height: 150%;
     padding: 8px 0px;
     font-size: 15px;
+}
+@media (max-width: 767px) {
+    .aboutme{
+        height: 100em;
+    }
+    .divde{
+        flex-direction: column;
+    align-items: center;
+    }
+    .img{
+        width: 31.25em;
+    }
+    .texts{
+        width: 70vw;
+    }
+    .whyhme{
+        width: 80vw;
+    }
+
+    
 }

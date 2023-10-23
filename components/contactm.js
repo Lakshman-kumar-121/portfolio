@@ -25,7 +25,7 @@ async function sendmessage (){
       setmessage('');
       alert("Message sent");
     const {data , error} = await SupbaseClient.from("ContactMe").upsert(dataToInsert , {returning : 'minimal'});
-
+    
 
 }
 
@@ -66,9 +66,6 @@ async function sendmessage (){
                     </div>
     
                 </div>
-    
-    
-    
             </div>
             <div className={styles.frm}>
                 <input type="text"  placeholder='Enter Your Name' value={name} onChange={(e)=>{
