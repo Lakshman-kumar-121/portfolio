@@ -91,16 +91,21 @@ font-weight: 400;
 }
 @media (max-width: 767px) {
     .ssec{
-        display: flex;
-        justify-content: center;
+        display: initial;
+        justify-content: flex-start;
+        align-self: start;
     }
-    
+    .frm{
+        width: 100vw;
+        padding: 0px 0px;
+    }
     .log{
         display: none;
     }
     .input{
-        
-        width: 75vw;
+
+        width: 80%;
+        /* margin: 0px 30px; */
     }
     
   
