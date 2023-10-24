@@ -75,3 +75,13 @@ font-weight: 400;
     margin: 5px;
 }
 
+
+@media (max-width : 767px) {
+    .bx{
+        width: 70%;
+        padding: 10px 0px ;
+        margin: auto;
+
+    }
+    
+}
