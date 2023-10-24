@@ -65,11 +65,10 @@ font-weight: 400;
 }
 .input{
     background-color: #14143A;
-    width: 300px;
+    width: 60vw;
     color: white;
     padding: 20px 20px;
     border: none;
-    
     border-radius: 8px;
     margin: 10px;
 }
@@ -100,7 +99,11 @@ font-weight: 400;
         display: none;
     }
     .input{
+        
         width: 80vw;
+    }
+    .frm{
+        /* padding: 0px 0px; */
     }
   
 }
