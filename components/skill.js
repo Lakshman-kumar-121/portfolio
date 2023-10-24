@@ -50,8 +50,8 @@ const Skill = () => {
   const responsive = {
     0: { items: 1 },
     380: { items: 1 },
-    512: { items: 2 },
-    665: { items: 3 },
+    512: { items: 1 },
+    665: { items: 2 },
     767: { items: 3 },
     870: { items: 4 },
     1050: { items: 5 },
@@ -64,9 +64,11 @@ const Skill = () => {
       <div className={styles.mysl}>My Skills</div>
       <div className={styles.bxshow}>
         <AliceCarousel
+        
           infinite
           disableButtonsControls
           autoPlay
+          className={styles.asl}
           mouseTracking
           disableDotsControls
           autoPlayInterval={1000}
