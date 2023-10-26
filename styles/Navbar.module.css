@@ -10,6 +10,12 @@
     color: greenyellow;
     font-size: 20px;
 }
+.shme{
+    display: initial;
+}
+.hdme{
+    display: none;
+}
 .navs{
     display: flex;
 
