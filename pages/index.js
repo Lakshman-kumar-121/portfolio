@@ -11,11 +11,11 @@ import Head from 'next/head';
 export default function Home() {
   return (
     <div>
-      <Head>
+      {/* <Head>
       <img  href="/developers.png" />
         <title>  
           Lakshman K</title>
-      </Head>
+      </Head> */}
       
       <HomeCont></HomeCont>
       
