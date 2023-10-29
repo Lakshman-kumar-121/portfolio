@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import styles from '../styles/Sc.module.css';
 import { BsFillSunFill, BsFillMoonStarsFill } from 'react-icons/bs';
+import { ThemeContext } from '@/pages';
+import { changetheme, thememde } from './modecontext';
+
 
 const Themeic = () => {
-  const [dark, setDark] = useState(true);
-
-  function changeTheme() {
-    setDark(!dark);
-  }
+  const change = changetheme();
+  const mode = thememde();
   return (
-    <label className={dark ? styles.dark : styles.light}>
-      <input type='checkbox' className={styles.them} onClick={changeTheme} />
-      {dark ? <BsFillSunFill  /> : <BsFillMoonStarsFill  />}
+    <label className={mode ?  styles.light :styles.dark}>
+      <input type='checkbox' className={styles.them} onClick={change} />
+      {mode ?   <BsFillMoonStarsFill  />: <BsFillSunFill  />} 
     </label>
   );
 }

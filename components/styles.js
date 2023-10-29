@@ -31,8 +31,15 @@ const styles = {
     navbtn : {
         background: "linear-gradient(90deg, #CA83FA, #F680FE)"  ,
         color : 'white',
-    }
+    },
+    navhover: {
+color : '#1463B9'
+    },
+    gototop: {
+        backgroundColor: '#0D012C',
+        color: 'white'
 
+    }
 
 };
 

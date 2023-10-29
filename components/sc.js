@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/Sc.module.css';
 import {AiOutlineArrowUp} from 'react-icons/ai';
+import mystyles from './styles';
+import { thememde } from './modecontext';
 function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
+  const mode = thememde;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,8 +35,10 @@ function ScrollToTopButton() {
 
   return (
     <button
+    style={mode? mystyles.gototop : null}
       onClick={scrollToTop}
-      className={`${styles['scroll-to-top']} ${isVisible ? styles['visible'] : ''}`}
+      className={`${styles['scroll-to-top']} ${isVisible ? styles['visible'] : ''}`
+    }
     >
       <AiOutlineArrowUp/>
     </button>

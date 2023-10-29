@@ -1,13 +1,13 @@
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import styles from '../styles/Work.module.css';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react'; // Import useContext
 import { BsLaptop } from 'react-icons/bs';
 import { AiFillGithub } from 'react-icons/ai';
-import { createClient } from "@supabase/supabase-js";
 import SupbaseClient from "./supbase_conn/clientcon";
-
 import mystyles from './styles';
+import { ThemeContext } from '@/pages'; // Import ThemeContext
+import { thememde } from "./modecontext";
 
 const Mywork = () => {
   const responsive = {
@@ -20,9 +20,11 @@ const Mywork = () => {
     1050: { items: 3 },
     1265: { items: 3 },
   };
-  
+
   const [isClient, setIsClient] = useState(false);
   const [myData, setMyData] = useState([]);
+  const applyStyle = (style, condition) => (condition ? style : null);
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -44,26 +46,38 @@ const Mywork = () => {
     return null;
   }
 
+  const mode = thememde(); // Get the mode from ThemeContext
+
   const skillItems = myData.map((skill) => (
-    <div key={skill.id} className={styles.bx} style={mystyles.navclr}>
+    <div key={skill.id} className={styles.bx} style={applyStyle(mystyles.navclr, mode)}>
       <img src="img.png" alt="" className={styles.im} width='100px' />
-      <div className={styles.langs} style={mystyles.textlightoragcolor} >{skill.Framework}</div>
-      <div className={styles.head} style={mystyles.dbfontcolor} >{skill.Name}</div>
-      <div className={styles.dis} style={mystyles.rgcolor} >{skill.Discription}</div>
-      <div className={styles.code} ><div style={mystyles.rgcolor}><BsLaptop className={styles.icon}  / > LIVE DEMO</div>
-      <div > <AiFillGithub className={styles.icon}/>SOURCE CODE</div></div>
+      <div className={styles.langs} style={applyStyle(mystyles.textlightoragcolor, mode)}>{skill.Framework}</div>
+      <div className={styles.head} style={applyStyle(mystyles.dbfontcolor, mode)}>{skill.Name}</div>
+      <div className={styles.dis} style={applyStyle(mystyles.rgcolor, mode)}>{skill.Discription}</div>
+      <div className={styles.code}>
+        <div style={applyStyle(mystyles.rgcolor, mode)}>
+          <BsLaptop className={styles.icon} />
+          LIVE DEMO
+        </div>
+        <div>
+          <AiFillGithub className={styles.icon} />
+          SOURCE CODE
+        </div>
+      </div>
     </div>
   ));
 
   const renderDotsItem = (isActive, index) => {
-    const customDotClass = isActive.isActive ? `${styles.customdot} ${styles.active}` : `${styles.customdot} ${styles.inactive}`;
+    const customDotClass = isActive.isActive
+      ? `${styles.customdot} ${styles.active}`
+      : `${styles.customdot} ${styles.inactive}`;
     return <div key={index} className={customDotClass}></div>;
   };
 
   return (
-    <div className={styles.bgs} id="My work" style={mystyles.bgclr}>
-    <div className={styles.myskil} style={mystyles.textoragcolor} >CHECK OUT MY PROJECTS</div>
-      <div className={styles.mysl} style={mystyles.dbfontcolor}>My Work</div>
+    <div className={styles.bgs} id="My work" style={applyStyle(mystyles.bgclr, mode)}>
+      <div className={styles.myskil} style={applyStyle(mystyles.textoragcolor, mode)}>CHECK OUT MY PROJECTS</div>
+      <div className={styles.mysl} style={applyStyle(mystyles.dbfontcolor, mode)}>My Work</div>
       <AliceCarousel
         infinite
         disableButtonsControls

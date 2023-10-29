@@ -7,9 +7,15 @@ import Mywork from '@/components/work';
 import Contactme from '@/components/contactm';
 import Menu from '@/components/sidemenu';
 import Head from 'next/head';
+import { useContext } from 'react';
+import React from 'react';
+
 
 export default function Home() {
+
+  
   return (
+    
     <div>
       {/* <Head>
       <img  href="/developers.png" />
@@ -23,9 +29,10 @@ export default function Home() {
       <Skill/>
       <Mywork/>
       <Contactme/>
+      
 
     </div>
-        
+ 
       
         
     
