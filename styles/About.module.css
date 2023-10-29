@@ -29,13 +29,17 @@
     padding: 5px 0px;
 }
 .dwncv{
+     color : white;
+        font-size: 12px;
+        padding : 22px 40px;
+        font-weight: 700;
     margin: 020px 0px;
     letter-spacing: 1.1px;
     cursor: pointer;
     border-radius: 10px;
     border: none;
     background-color: #59C378;
-    padding: 18px 38px;
+    
 }
 .dis{
     color: rgba(255, 255, 255, 0.81);

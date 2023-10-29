@@ -22,16 +22,11 @@
 }
 .navs:hover{
     color: #6f6190b2;
-    margin-left: 40px;
+    margin-left: 25px;
 }
 .home{
     color: #59C378;
 }
-/* .close{
-    padding-bottom: 30px;
-    display: flex;
-    justify-content: end;
-} */
 .icons{
     font-size:22px;
 }

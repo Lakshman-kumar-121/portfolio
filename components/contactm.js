@@ -3,7 +3,11 @@ import {BiPhoneCall} from 'react-icons/bi';
 import {HiOutlineMail ,HiLocationMarker} from 'react-icons/hi';
 import SupbaseClient from './supbase_conn/clientcon';
 import { useState } from 'react';
+import mystyles from './styles';
+import useHover from './btnhover';
 const Contactme = () => {
+    const {hover , onhovertrue , onhoverfalse} = useHover();
+
 
     const [name , setname] = useState('');
 
@@ -32,10 +36,10 @@ async function sendmessage (){
 
 
     return ( 
-        <div className={styles.cntbg} id='Contact'>
+        <div className={styles.cntbg} id='Contact' style={mystyles.bgclr}>
         <div className={styles.hd}>
-            <div className={styles.fst}>I Want To Hear From You</div>
-            <div className={styles.cnt}>Contact Me</div>
+            <div className={styles.fst} style={mystyles.textoragcolor} >I Want To Hear From You</div>
+            <div className={styles.cnt} style={mystyles.dbfontcolor} >Contact Me</div>
         </div>
         <div className={styles.ssec}>
     
@@ -43,8 +47,8 @@ async function sendmessage (){
                 <div className={styles.onelogsec}>
                     <BiPhoneCall className={`${styles.clog} ${styles.call}`} />
                     <div>
-                        <div className={styles.lhd}>Call Me:</div>
-                        <div className={styles.ds}>
+                        <div className={styles.lhd} style={mystyles.dbfontcolor} >Call Me:</div>
+                        <div className={styles.ds} style={mystyles.textlightoragcolor}>
                             +91 809 522 2577
                         </div>
                     </div>
@@ -53,33 +57,33 @@ async function sendmessage (){
                 <div className={styles.onelogsec }>
                 <HiOutlineMail className={`${styles.clog} ${styles.mail}`} />
                     <div>
-                        <div className={styles.lhd}>Email Me:</div>
-                        <div className={styles.ds}> Lakshmankumarr121@gmail.com</div>
+                        <div className={styles.lhd} style={mystyles.dbfontcolor}>Email Me:</div>
+                        <div className={styles.ds} style={mystyles.textlightoragcolor} > Lakshmankumarr121@gmail.com</div>
                     </div>
                 </div>
 
                 <div className={styles.onelogsec}>
                     <HiLocationMarker className={`${styles.clog} ${styles.loc}`} />
                     <div>
-                        <div className={styles.lhd}>Location:</div>
-                        <div className={styles.ds}> Karnataka , Banglore</div>
+                        <div className={styles.lhd} style={mystyles.dbfontcolor}>Location:</div>
+                        <div className={styles.ds} style={mystyles.textlightoragcolor}> Karnataka , Banglore</div>
                     </div>
     
                 </div>
             </div>
             <div className={styles.frm}>
-                <input type="text"  placeholder='Enter Your Name' value={name} onChange={(e)=>{
+                <input type="text" style={mystyles.navclr}  placeholder='Enter Your Name' value={name} onChange={(e)=>{
                     setname(e.target.value);
-                }} className={styles.input}/><input type="text" value={email} onChange={(e)=>{
+                }} className={styles.input}/><input type="text"  style={mystyles.navclr} value={email} onChange={(e)=>{
                     setmail(e.target.value);
                 }}  placeholder='Enter Your Email' className={styles.input}/> <br />
                 <input onChange={(e)=>{
                     setsubject(e.target.value);
-                }}  type="text"className={`${styles.input} ${styles.sub}`} value={subject} placeholder='Enter Subject' height='20px' /> <br />
+                }}  type="text"className={`${styles.input} ${styles.sub}`}  style={mystyles.navclr} value={subject} placeholder='Enter Subject' height='20px' /> <br />
                 <textarea  onChange={(e)=>{
                     setmessage(e.target.value);
-                }} name="message"  placeholder='Your Message' value={message} className={`${styles.input} ${styles.sub}`} rows="8" cols="50"></textarea> <br />
-                <button className={styles.sendbtn} onClick={()=>{sendmessage()}}>Send Message</button>
+                }} name="message"   style={mystyles.navclr} placeholder='Your Message' value={message} className={`${styles.input} ${styles.sub}`} rows="8" cols="50"></textarea> <br />
+                <button className={styles.sendbtn} onMouseEnter={onhovertrue} onMouseLeave={onhoverfalse} style={hover?   mystyles.btnhover : mystyles.btn} onClick={()=>{sendmessage()}}>Send Message</button>
             </div>
         </div>
     </div>

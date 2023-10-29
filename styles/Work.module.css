@@ -6,6 +6,23 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
+  .myskil{
+        font-family: poppins,sans-serif!important;
+
+    color:#59C378 ;
+font-size: 15px;
+font-weight: 400;
+}
+.mysl{
+      font-family: poppins,sans-serif!important;
+
+    padding: 10px;
+    font-size: 40px;
+    color: white;
+     font-size:45px;
+    font-weight: 600;
+    
+}
   
   .customdot.active {
     background-color: #59C378;
@@ -22,6 +39,7 @@
     text-align: initial;
     background-color: #0D012C;
     color: white;
+    flex-direction: column;
     display: flex ;
   justify-content: flex-start;
   align-items: center;

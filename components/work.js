@@ -7,6 +7,8 @@ import { AiFillGithub } from 'react-icons/ai';
 import { createClient } from "@supabase/supabase-js";
 import SupbaseClient from "./supbase_conn/clientcon";
 
+import mystyles from './styles';
+
 const Mywork = () => {
   const responsive = {
     0: { items: 1 },
@@ -43,13 +45,13 @@ const Mywork = () => {
   }
 
   const skillItems = myData.map((skill) => (
-    <div key={skill.id} className={styles.bx}>
+    <div key={skill.id} className={styles.bx} style={mystyles.navclr}>
       <img src="img.png" alt="" className={styles.im} width='100px' />
-      <div className={styles.langs}>{skill.Framework}</div>
-      <div className={styles.head}>{skill.Name}</div>
-      <div className={styles.dis}>{skill.Discription}</div>
-      <div className={styles.code}><div><BsLaptop className={styles.icon}/> LIVE DEMO</div>
-      <div> <AiFillGithub className={styles.icon}/>SOURCE CODE</div></div>
+      <div className={styles.langs} style={mystyles.textlightoragcolor} >{skill.Framework}</div>
+      <div className={styles.head} style={mystyles.dbfontcolor} >{skill.Name}</div>
+      <div className={styles.dis} style={mystyles.rgcolor} >{skill.Discription}</div>
+      <div className={styles.code} ><div style={mystyles.rgcolor}><BsLaptop className={styles.icon}  / > LIVE DEMO</div>
+      <div > <AiFillGithub className={styles.icon}/>SOURCE CODE</div></div>
     </div>
   ));
 
@@ -59,7 +61,9 @@ const Mywork = () => {
   };
 
   return (
-    <div className={styles.bgs} id="My work">
+    <div className={styles.bgs} id="My work" style={mystyles.bgclr}>
+    <div className={styles.myskil} style={mystyles.textoragcolor} >CHECK OUT MY PROJECTS</div>
+      <div className={styles.mysl} style={mystyles.dbfontcolor}>My Work</div>
       <AliceCarousel
         infinite
         disableButtonsControls

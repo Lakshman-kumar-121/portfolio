@@ -3,7 +3,7 @@ import styles from '../styles/Skill.module.css';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import SupbaseClient from './supbase_conn/clientcon';
-
+import mystyles from './styles';
 const Skill = () => {
   const [isClient, setIsClient] = useState(false);
   const [myData, setData] = useState([]);
@@ -36,10 +36,10 @@ const Skill = () => {
   }
 
   const skillItems = myData.map((skill) => (
-    <div key={skill.id} className={styles.bx} >
+    <div key={skill.id} className={styles.bx} style={mystyles.navclr} >
       <img src={skill.Image} alt="" className={styles.im} width="100px" />
-      <div className={styles.lang}>{skill.Name}</div>
-      <div className={`${styles.skill} ${getStyleForExperience(skill.Level)}`}>{skill.Level}</div>
+      <div className={styles.lang} style={mystyles.dbfontcolor}  >{skill.Name}</div>
+      <div className={`${styles.skill} ${getStyleForExperience(skill.Level)}`}  style={mystyles.skilbord} >{skill.Level}</div>
     </div>
   ));
 
@@ -59,9 +59,9 @@ const Skill = () => {
   };
 
   return (
-    <div className={styles.skbg} id="Skill">
-      <div className={styles.myskil}>MY SKILLS PROGRESS SO FAR</div>
-      <div className={styles.mysl}>My Skills</div>
+    <div className={styles.skbg} id="Skill" style={mystyles.bgclr}>
+      <div className={styles.myskil} style={mystyles.textoragcolor} >MY SKILLS PROGRESS SO FAR</div>
+      <div className={styles.mysl} style={mystyles.dbfontcolor}>My Skills</div>
       <div className={styles.bxshow}>
         <AliceCarousel
         
@@ -74,6 +74,7 @@ const Skill = () => {
           autoPlayInterval={1000}
           responsive={responsive}
           items={skillItems}
+          
         />
       </div>
     </div>

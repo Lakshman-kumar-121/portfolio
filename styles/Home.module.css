@@ -2,10 +2,10 @@
     background-color: #110A3C;
     /* width: 100vw; */
     height: 40em;
-    padding: 20px 5vw;
+    padding: 70px 5vw;
 }
 .soft{
-    margin: 10px 0px;
+    margin: 15px 0px;
     color: #DADC13;
 font-weight: 500;
 font-size: 14px;
@@ -41,15 +41,17 @@ font-family: Jost,sans-serif!important;
 }
 .hme{
     display: flex;
-    padding: 20px 40px;
+    padding: 22px 45px;
+    
     background-image: linear-gradient(90deg, #DB4C63, #B069CF, #1DACD7); 
-    color: #fff;
-    font-size: 14px;
+    
+    font-size: 12px;
+    font-weight: 700;
     border: none;
     margin:20px 0px ;
     font-family: poppins,sans-serif!important;
     border-radius: 25px;
-    font-weight: 500;
+    
     cursor: pointer;
     letter-spacing: 1.2px;
 }
