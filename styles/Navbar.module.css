@@ -29,7 +29,16 @@
 }
 .navicon{
     font-family: Share Tech Mono,monospace;
-    color: white;
+    color: #014FA8;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0px 1.5vw;
+    cursor: pointer ;
+    text-decoration: none;
+}
+.naviconhd{
+    font-family: Share Tech Mono,monospace;
+    color: #59C378;
     font-size: 15px;
     font-weight: 600;
     padding: 0px 1.5vw;

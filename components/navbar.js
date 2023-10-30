@@ -45,11 +45,11 @@ const mode = thememde();
           Pro.dev
         </span>
       </div>
-      <div className={showside ? styles.shme : styles.hdme}>
+      <div className={showside ? styles.shme : styles.hdme}  >
         <Menu showhide={setside} scrol={scrollToTop} />
       </div>
       <div className={styles.navs}>
-        <ul onClick={() => scrollToTop('Home')} style={applyStyle(mystles.textoragcolor, mode)} className={styles.navicon}>
+        <ul onClick={() => scrollToTop('Home')} style={applyStyle(mystles.textoragcolor, mode)} className={styles.naviconhd}>
           HOME
         </ul>
         <ul
@@ -90,7 +90,7 @@ const mode = thememde();
         </ul>
         <ul
           onClick={() => scrollToTop('Contact')}
-          style={nav5 ? applyStyle(mystles.navhover, mode) : mystles.rgcolor}
+          style={nav5 ? applyStyle(mystles.navhover, mode) : mystles.rgcolor }
           onMouseEnter={navhover5}
           onMouseLeave={navhoverfalse5}
           className={styles.navicon}
@@ -106,7 +106,7 @@ const mode = thememde();
           Contact Me
         </button>
       </div>
-      <AiOutlineMenu onClick={setside} className={styles.menu} />
+      <AiOutlineMenu onClick={setside} className={styles.menu} style={applyStyle( mystles.black ,mode )} />
     </div>
   );
 };

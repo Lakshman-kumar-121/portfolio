@@ -74,17 +74,19 @@ const applyStyle = (style, condition) => (condition ? style : null);
                 </div>
             </div>
             <div className={styles.frm}>
+                
                 <input type="text" style={applyStyle( mystyles.navclr, mode)}  placeholder='Enter Your Name' value={name} onChange={(e)=>{
                     setname(e.target.value);
-                }} className={styles.input}/><input type="text"  style={applyStyle( mystyles.navclr, mode)} value={email} onChange={(e)=>{
+                }} className={styles.input}/>
+                <input type="text"  style={applyStyle( mystyles.navclr, mode)} value={email} onChange={(e)=>{
                     setmail(e.target.value);
-                }}  placeholder='Enter Your Email' className={styles.input}/> <br />
+                }}  placeholder='Enter Your Email' className={styles.input}/>  
                 <input onChange={(e)=>{
                     setsubject(e.target.value);
-                }}  type="text"className={`${styles.input} ${styles.sub}`}  style={applyStyle( mystyles.navclr, mode)} value={subject} placeholder='Enter Subject' height='20px' /> <br />
+                }}  type="text"className={`${styles.input} ${styles.sub}`}  style={applyStyle( mystyles.navclr, mode)} value={subject} placeholder='Enter Subject' height='20px' />     
                 <textarea  onChange={(e)=>{
                     setmessage(e.target.value);
-                }} name="message"   style={applyStyle( mystyles.navclr, mode)} placeholder='Your Message' value={message} className={`${styles.input} ${styles.sub}`} rows="8" cols="50"></textarea> <br />
+                }} name="message"   style={applyStyle( mystyles.navclr, mode)} placeholder='Your Message' value={message} className={`${styles.input}`} rows="8" ></textarea> <br />
                 <button className={styles.sendbtn} onMouseEnter={onhovertrue} onMouseLeave={onhoverfalse} style={hover?   applyStyle( mystyles.btnhover, mode) : applyStyle( mystyles.btn, mode)} onClick={()=>{sendmessage()}}>Send Message</button>
             </div>
         </div>

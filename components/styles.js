@@ -35,10 +35,20 @@ const styles = {
     navhover: {
 color : '#1463B9'
     },
+
     gototop: {
         backgroundColor: '#0D012C',
         color: 'white'
 
+    },
+    whitecolor : {
+        color : 'white'
+    },
+    black: {
+        color : 'black'
+    },
+    greencolor : {
+        color : '#59C378'
     }
 
 };

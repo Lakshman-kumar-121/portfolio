@@ -6,7 +6,6 @@ import { BsLaptop } from 'react-icons/bs';
 import { AiFillGithub } from 'react-icons/ai';
 import SupbaseClient from "./supbase_conn/clientcon";
 import mystyles from './styles';
-import { ThemeContext } from '@/pages'; // Import ThemeContext
 import { thememde } from "./modecontext";
 
 const Mywork = () => {

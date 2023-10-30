@@ -1,13 +1,12 @@
 .bg{
     background-color: #0D012C;
     width: 60vw;
-    padding: 0px ;
+    
     justify-content: end;
     position: fixed;
     right: 0px;
     top: -70px;
-    padding: 80px 30px;
-    
+    padding: 100px 0px;
     height: 100vh;
     color: rgba(255, 255, 255, 0.807);
     z-index: 1;
@@ -15,18 +14,22 @@
 .navs{
     width: 80px;
     font-weight: 600;
+    padding: 12px 30px;
     font-size: 15px;
-    margin: 22px 0px;
     font-family: poppins,sans-serif!important;
     cursor: pointer;
+    transition: color 0.3s ease, margin-left 0.3s ease
 }
 .navs:hover{
-    color: #6f6190b2;
-    margin-left: 25px;
+    color: #6f6190b2;   
+    margin-left: 10px;
+    animation: move 5s ease-in;
 }
 .home{
     color: #59C378;
 }
 .icons{
+    padding: 5px 20px;
     font-size:22px;
+    cursor: pointer;
 }
