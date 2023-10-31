@@ -54,7 +54,7 @@ const mode = thememde();
         </ul>
         <ul
           onClick={() => scrollToTop('About')}
-          style={nav1 ? applyStyle(mystles.navhover, mode) : mystles.rgcolor}
+          style={nav1 ? applyStyle(mystles.navhover, mode)  : mode? mystles.black :  mystles.whitecolor}
           onMouseEnter={navhover1}
           onMouseLeave={navhoverfalse1}
           className={styles.navicon}
@@ -63,7 +63,7 @@ const mode = thememde();
         </ul>
         <ul
           onClick={() => scrollToTop('Service')}
-          style={nav2 ? applyStyle(mystles.navhover, mode) : mystles.rgcolor}
+          style={nav2 ? applyStyle(mystles.navhover, mode)  : mode? mystles.black :  mystles.whitecolor}
           onMouseEnter={navhover2}
           onMouseLeave={navhoverfalse2}
           className={styles.navicon}
@@ -72,7 +72,7 @@ const mode = thememde();
         </ul>
         <ul
           onClick={() => scrollToTop('Skill')}
-          style={nav3 ? applyStyle(mystles.navhover, mode) : mystles.rgcolor}
+          style={nav3 ? applyStyle(mystles.navhover, mode)  : mode? mystles.black :  mystles.whitecolor}
           onMouseEnter={navhover3}
           onMouseLeave={navhoverfalse3}
           className={styles.navicon}
@@ -81,16 +81,16 @@ const mode = thememde();
         </ul>
         <ul
           onClick={() => scrollToTop('My work')}
-          style={nav4 ? applyStyle(mystles.navhover, mode) : mystles.rgcolor}
+          style={nav4 ? applyStyle(mystles.navhover, mode) : mode? mystles.black :  mystles.whitecolor}
           onMouseEnter={navhover4}
           onMouseLeave={navhoverfalse4}
-          className={styles.navicon}
+          className={   styles.navicon  }
         >
           MY WORK
         </ul>
         <ul
           onClick={() => scrollToTop('Contact')}
-          style={nav5 ? applyStyle(mystles.navhover, mode) : mystles.rgcolor }
+          style={nav5 ? applyStyle(mystles.navhover, mode) : mode? mystles.black :  mystles.whitecolor}
           onMouseEnter={navhover5}
           onMouseLeave={navhoverfalse5}
           className={styles.navicon}

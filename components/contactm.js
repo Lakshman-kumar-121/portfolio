@@ -22,6 +22,8 @@ const Contactme = () => {
 
     ;
 async function sendmessage (){
+    console.log(name)
+    if (name != '' && email != '' && subject != '' && message != ''){
     const dataToInsert = [
         { Name : name, Email : email , Subject : subject , Message: message  },
       ]
@@ -31,7 +33,10 @@ async function sendmessage (){
       setmessage('');
       alert("Message sent");
     const {data , error} = await SupbaseClient.from("ContactMe").upsert(dataToInsert , {returning : 'minimal'});
-    
+    }
+    else{
+        alert('Fill data');
+    }
 
 }
 const applyStyle = (style, condition) => (condition ? style : null);
