@@ -14,7 +14,7 @@ const Menu = (props) => {
 
     
     return (
-        <div className={styles.bg} style={applyStyle(mystyles.bgclr , mode)}   >
+        <div className={styles.bg} style={applyStyle(mystyles.bgclr , mode)}  data-aos="slide-up" data-aos-duration="1000"   >
             <div className={styles.close}><AiOutlineClose className={styles.icons} onClick={a} style={applyStyle(mystyles.greencolor ,mode)} /></div>
             <div className={`${styles.navs} ${styles.home}`} onClick={()=> scrol('Home')} style={applyStyle(mystyles.textlightoragcolor,mode)} >HOME</div>
             <div className={styles.navs} onClick={()=> scrol('About')} style={applyStyle(mystyles.rgcolor,mode)} >ABOUT</div>

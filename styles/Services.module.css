@@ -1,0 +1,33 @@
+.skbg{
+    color: white;
+    background-color: #0D012C;
+
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: poppins,sans-serif!important;
+
+}
+.bxshow{
+    /* background-color: aqua; */
+    padding-top: 30px ;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    width: 92vw;
+
+}
+.myskil{
+    color:#59C378 ;
+font-size: 15px;
+font-weight: 400;
+}
+.mysl{
+    padding: 10px;
+    font-size: 40px;
+    color: white;
+     font-size:45px;
+    font-weight: 600;
+    
+}

@@ -58,7 +58,7 @@ const Mywork = () => {
           <BsLaptop className={styles.icon} />
           LIVE DEMO
         </div>
-        <div>
+        <div style={applyStyle(mystyles.rgcolor, mode)}>
           <AiFillGithub className={styles.icon} />
           SOURCE CODE
         </div>
@@ -75,8 +75,8 @@ const Mywork = () => {
 
   return (
     <div className={styles.bgs} id="My work" style={applyStyle(mystyles.bgclr, mode)}>
-      <div className={styles.myskil} style={applyStyle(mystyles.textoragcolor, mode)}>CHECK OUT MY PROJECTS</div>
-      <div className={styles.mysl} style={applyStyle(mystyles.dbfontcolor, mode)}>My Work</div>
+      <div className={styles.myskil} style={applyStyle(mystyles.textoragcolor, mode)} data-aos-once="true"   data-aos="fade-up" data-aos-duration="500" >CHECK OUT MY PROJECTS</div>
+      <div className={styles.mysl} style={applyStyle(mystyles.dbfontcolor, mode)} data-aos-once="true"   data-aos="fade-up" data-aos-duration="500" >My Work</div>
       <AliceCarousel
         infinite
         disableButtonsControls

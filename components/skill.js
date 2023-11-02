@@ -67,11 +67,13 @@ const Skill = () => {
   
 
   return (
+    
     <div className={styles.skbg} id="Skill" style={applyStyle(mystyles.bgclr, mode)}>
-      <div className={styles.myskil} style={applyStyle(mystyles.textoragcolor, mode)}>MY SKILLS PROGRESS SO FAR</div>
-      <div className={styles.mysl} style={applyStyle(mystyles.dbfontcolor, mode)}>My Skills</div>
-      <div className={styles.bxshow}>
+      <div className={styles.myskil} style={applyStyle(mystyles.textoragcolor, mode)} data-aos-once="true"   data-aos="fade-up" data-aos-duration="500" >MY SKILLS PROGRESS SO FAR</div>
+      <div className={styles.mysl} style={applyStyle(mystyles.dbfontcolor, mode)} data-aos-once="true"   data-aos="fade-up" data-aos-duration="500" >My Skills</div>
+      <div className={styles.bxshow}  >
         <AliceCarousel
+ 
           infinite
           disableButtonsControls
           autoPlay

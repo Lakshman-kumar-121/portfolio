@@ -9,6 +9,7 @@ import Menu from '@/components/sidemenu';
 import Head from 'next/head';
 import { useContext } from 'react';
 import React from 'react';
+import Services from '@/components/services';
 
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
       <Skill/>
       <Mywork/>
       <Contactme/>
+      <Services></Services>
       
 
     </div>

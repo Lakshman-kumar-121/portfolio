@@ -5,8 +5,10 @@ import SupbaseClient from './supbase_conn/clientcon';
 import { useContext, useState } from 'react';
 import mystyles from './styles';
 import useHover from './btnhover';
+import 'aos/dist/aos.css';
 import { ThemeContext } from '@/pages';
 import { thememde } from './modecontext';
+import AosInitializer from './aos';
 const Contactme = () => {
     const {hover , onhovertrue , onhoverfalse} = useHover();
 
@@ -40,11 +42,11 @@ async function sendmessage (){
 
 }
 const applyStyle = (style, condition) => (condition ? style : null);
-
-
     return ( 
-        <div className={styles.cntbg} id='Contact' style={applyStyle(mystyles.bgclr, mode) }>
-        <div className={styles.hd}>
+
+        <div className={styles.cntbg} id='Contact' style={applyStyle(mystyles.bgclr, mode)  } >
+        
+        <div className={styles.hd} >
             <div className={styles.fst} style={ applyStyle(mystyles.textoragcolor , mode)} >I Want To Hear From You</div>
             <div className={styles.cnt} style={applyStyle( mystyles.dbfontcolor , mode)} >Contact Me</div>
         </div>
@@ -53,8 +55,8 @@ const applyStyle = (style, condition) => (condition ? style : null);
             <div className={styles.log}>
                 <div className={styles.onelogsec}>
                     <BiPhoneCall className={`${styles.clog} ${styles.call}`} />
-                    <div>
-                        <div className={styles.lhd} style={applyStyle( mystyles.dbfontcolor, mode)} >Call Me:</div>
+                    <div  data-aos-once="true"   data-aos="fade-up" data-aos-duration="500">
+                        <div className={styles.lhd} style={applyStyle( mystyles.dbfontcolor, mode)}  >Call Me:</div>
                         <div className={styles.ds} style={applyStyle( mystyles.textlightoragcolor, mode)}>
                             +91 809 522 2577
                         </div>
@@ -63,15 +65,15 @@ const applyStyle = (style, condition) => (condition ? style : null);
                 </div>
                 <div className={styles.onelogsec }>
                 <HiOutlineMail className={`${styles.clog} ${styles.mail}`} />
-                    <div>
+                    <div  data-aos-once="true"   data-aos="fade-up" data-aos-duration="500">
                         <div className={styles.lhd} style={applyStyle( mystyles.dbfontcolor, mode)}>Email Me:</div>
                         <div className={styles.ds} style={applyStyle( mystyles.textlightoragcolor, mode)} > Lakshmankumarr121@gmail.com</div>
                     </div>
                 </div>
 
                 <div className={styles.onelogsec}>
-                    <HiLocationMarker className={`${styles.clog} ${styles.loc}`} />
-                    <div>
+                    <HiLocationMarker className={`${styles.clog} ${styles.loc}`}  data-aos-once="true"   data-aos="fade-up" data-aos-duration="500" />
+                    <div  data-aos-once="true"   data-aos="fade-up" data-aos-duration="500">
                         <div className={styles.lhd} style={applyStyle( mystyles.dbfontcolor, mode)}>Location:</div>
                         <div className={styles.ds} style={applyStyle( mystyles.textlightoragcolor, mode)}> Karnataka , Banglore</div>
                     </div>

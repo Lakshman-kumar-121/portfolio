@@ -41,7 +41,8 @@ const mode = thememde();
     <div className={styles.navbar} style={applyStyle(mystles.navclr, mode)}>
       <div className={styles.heading}>
         <img src="developers.png" alt="" className={styles.imglog} />
-        <span className={styles.prodev} style={applyStyle(mystles.textoragcolor, mode)}>
+        <span         data-aos="fade-down" data-aos-duration="800" 
+ className={styles.prodev} style={applyStyle(mystles.textoragcolor, mode)}>
           Pro.dev
         </span>
       </div>
@@ -49,10 +50,12 @@ const mode = thememde();
         <Menu showhide={setside} scrol={scrollToTop} />
       </div>
       <div className={styles.navs}>
-        <ul onClick={() => scrollToTop('Home')} style={applyStyle(mystles.textoragcolor, mode)} className={styles.naviconhd}>
+        <ul data-aos="fade-down" data-aos-duration="800" onClick={() => scrollToTop('Home')} style={applyStyle(mystles.textoragcolor, mode)} className={styles.naviconhd}>
           HOME
         </ul>
         <ul
+        data-aos="fade-down" data-aos-duration="1000"
+        data-aos-delay="100"
           onClick={() => scrollToTop('About')}
           style={nav1 ? applyStyle(mystles.navhover, mode)  : mode? mystles.black :  mystles.whitecolor}
           onMouseEnter={navhover1}
@@ -62,6 +65,8 @@ const mode = thememde();
           ABOUT
         </ul>
         <ul
+        data-aos="fade-down" data-aos-duration="1200"
+        data-aos-delay="150"
           onClick={() => scrollToTop('Service')}
           style={nav2 ? applyStyle(mystles.navhover, mode)  : mode? mystles.black :  mystles.whitecolor}
           onMouseEnter={navhover2}
@@ -71,6 +76,8 @@ const mode = thememde();
           SERVICES
         </ul>
         <ul
+        data-aos="fade-down" data-aos-duration="1300"
+        data-aos-delay="200"
           onClick={() => scrollToTop('Skill')}
           style={nav3 ? applyStyle(mystles.navhover, mode)  : mode? mystles.black :  mystles.whitecolor}
           onMouseEnter={navhover3}
@@ -80,6 +87,8 @@ const mode = thememde();
           SKILLS
         </ul>
         <ul
+        data-aos="fade-down" data-aos-duration="1400"
+        data-aos-delay="250"
           onClick={() => scrollToTop('My work')}
           style={nav4 ? applyStyle(mystles.navhover, mode) : mode? mystles.black :  mystles.whitecolor}
           onMouseEnter={navhover4}
@@ -89,6 +98,8 @@ const mode = thememde();
           MY WORK
         </ul>
         <ul
+        data-aos="fade-down" data-aos-duration="1500"
+        data-aos-delay="300"
           onClick={() => scrollToTop('Contact')}
           style={nav5 ? applyStyle(mystles.navhover, mode) : mode? mystles.black :  mystles.whitecolor}
           onMouseEnter={navhover5}
