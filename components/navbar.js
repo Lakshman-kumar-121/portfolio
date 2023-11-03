@@ -46,8 +46,8 @@ const mode = thememde();
           Pro.dev
         </span>
       </div>
-      <div className={showside ? styles.shme : styles.hdme}  >
-        <Menu showhide={setside} scrol={scrollToTop} />
+      <div   className={showside ? styles.shme : styles.hdme}  >
+        <Menu   showhide={setside} scrol={scrollToTop}  />
       </div>
       <div className={styles.navs}>
         <ul data-aos="fade-down" data-aos-duration="800" onClick={() => scrollToTop('Home')} style={applyStyle(mystles.textoragcolor, mode)} className={styles.naviconhd}>

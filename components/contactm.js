@@ -43,6 +43,8 @@ async function sendmessage (){
 }
 const applyStyle = (style, condition) => (condition ? style : null);
     return ( 
+        <>
+        <AosInitializer/>
 
         <div className={styles.cntbg} id='Contact' style={applyStyle(mystyles.bgclr, mode)  } >
         
@@ -50,12 +52,12 @@ const applyStyle = (style, condition) => (condition ? style : null);
             <div className={styles.fst} style={ applyStyle(mystyles.textoragcolor , mode)} >I Want To Hear From You</div>
             <div className={styles.cnt} style={applyStyle( mystyles.dbfontcolor , mode)} >Contact Me</div>
         </div>
-        <div className={styles.ssec}>
+        <div className={styles.ssec} >
     
-            <div className={styles.log}>
-                <div className={styles.onelogsec}>
+            <div className={styles.log}  >
+                <div className={styles.onelogsec}  data-aos-once="true"   data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
                     <BiPhoneCall className={`${styles.clog} ${styles.call}`} />
-                    <div  data-aos-once="true"   data-aos="fade-up" data-aos-duration="500">
+                    <div  >
                         <div className={styles.lhd} style={applyStyle( mystyles.dbfontcolor, mode)}  >Call Me:</div>
                         <div className={styles.ds} style={applyStyle( mystyles.textlightoragcolor, mode)}>
                             +91 809 522 2577
@@ -63,17 +65,17 @@ const applyStyle = (style, condition) => (condition ? style : null);
                     </div>
     
                 </div>
-                <div className={styles.onelogsec }>
+                <div className={styles.onelogsec }  data-aos-once="true"   data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
                 <HiOutlineMail className={`${styles.clog} ${styles.mail}`} />
-                    <div  data-aos-once="true"   data-aos="fade-up" data-aos-duration="500">
+                    <div  >
                         <div className={styles.lhd} style={applyStyle( mystyles.dbfontcolor, mode)}>Email Me:</div>
                         <div className={styles.ds} style={applyStyle( mystyles.textlightoragcolor, mode)} > Lakshmankumarr121@gmail.com</div>
                     </div>
                 </div>
 
-                <div className={styles.onelogsec}>
-                    <HiLocationMarker className={`${styles.clog} ${styles.loc}`}  data-aos-once="true"   data-aos="fade-up" data-aos-duration="500" />
-                    <div  data-aos-once="true"   data-aos="fade-up" data-aos-duration="500">
+                <div className={styles.onelogsec} data-aos-once="true"   data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+                    <HiLocationMarker className={`${styles.clog} ${styles.loc}`}  />
+                    <div>
                         <div className={styles.lhd} style={applyStyle( mystyles.dbfontcolor, mode)}>Location:</div>
                         <div className={styles.ds} style={applyStyle( mystyles.textlightoragcolor, mode)}> Karnataka , Banglore</div>
                     </div>
@@ -82,22 +84,23 @@ const applyStyle = (style, condition) => (condition ? style : null);
             </div>
             <div className={styles.frm}>
                 
-                <input type="text" style={applyStyle( mystyles.navclr, mode)}  placeholder='Enter Your Name' value={name} onChange={(e)=>{
+                <input type="text"   data-aos-once="true"   data-aos="slide-left" data-aos-duration="1000" data-aos-delay="600"style={applyStyle( mystyles.navclr, mode)}  placeholder='Enter Your Name' value={name} onChange={(e)=>{
                     setname(e.target.value);
                 }} className={styles.input}/>
-                <input type="text"  style={applyStyle( mystyles.navclr, mode)} value={email} onChange={(e)=>{
+                <input type="text"  data-aos-once="true"   data-aos="slide-left" data-aos-duration="1100" data-aos-delay="700" style={applyStyle( mystyles.navclr, mode)} value={email} onChange={(e)=>{
                     setmail(e.target.value);
                 }}  placeholder='Enter Your Email' className={styles.input}/>  
-                <input onChange={(e)=>{
+                <input  data-aos-once="true"   data-aos="slide-left" data-aos-duration="1200" data-aos-delay="800" onChange={(e)=>{
                     setsubject(e.target.value);
                 }}  type="text"className={`${styles.input} ${styles.sub}`}  style={applyStyle( mystyles.navclr, mode)} value={subject} placeholder='Enter Subject' height='20px' />     
-                <textarea  onChange={(e)=>{
+                <textarea   data-aos-once="true"   data-aos="slide-left" data-aos-duration="1400" data-aos-delay="900" onChange={(e)=>{
                     setmessage(e.target.value);
                 }} name="message"   style={applyStyle( mystyles.navclr, mode)} placeholder='Your Message' value={message} className={`${styles.input}`} rows="8" ></textarea> <br />
-                <button className={styles.sendbtn} onMouseEnter={onhovertrue} onMouseLeave={onhoverfalse} style={hover?   applyStyle( mystyles.btnhover, mode) : applyStyle( mystyles.btn, mode)} onClick={()=>{sendmessage()}}>Send Message</button>
+                <button  data-aos-once="true"   data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" className={styles.sendbtn} onMouseEnter={onhovertrue} onMouseLeave={onhoverfalse} style={hover?   applyStyle( mystyles.btnhover, mode) : applyStyle( mystyles.btn, mode)} onClick={()=>{sendmessage()}}>Send Message</button>
             </div>
         </div>
     </div>
+    </>
      );
 }
  

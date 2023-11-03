@@ -89,6 +89,7 @@ font-weight: 400;
 .frm{
     width: 45em;
     padding: 0px 30px;
+    overflow: hidden;
 }
 @media (max-width: 767px) {
     .ssec{
