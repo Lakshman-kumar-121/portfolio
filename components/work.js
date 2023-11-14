@@ -41,9 +41,6 @@ const Mywork = () => {
     setIsClient(true);
   }, []);
 
-  if (!isClient) {
-    return null;
-  }
 
   const mode = thememde(); // Get the mode from ThemeContext
 
@@ -72,6 +69,10 @@ const Mywork = () => {
       : `${styles.customdot} ${styles.inactive}`;
     return <div key={index} className={customDotClass}></div>;
   };
+  
+  if (!isClient) {
+    return null;
+  }
 
   return (
     <div className={styles.bgs} id="My work" style={applyStyle(mystyles.bgclr, mode)}>
