@@ -17,30 +17,27 @@ function MyApp({ Component, pageProps }) {
 
 
  }, []);
+ async function uploaddata() {
+  try {
+    const response = await fetch('https://ipapi.co/json/');
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
 
- async function uploaddata(){
-let ip;
-const userAgent = navigator.userAgent;
+    const data = await response.json();
+    const ip = data.ip;
 
-fetch('https://ipapi.co/json/')
-.then((response) => {
-  if (response.ok) {
-    return response.json();
-  } else {
-    throw new Error('Network response was not ok');
+    const userAgent = navigator.userAgent;
+    const dataToInsert = [{ Ip: ip, Browser: userAgent }];
+
+    const { data: responseData, error } = await SupbaseClient.from("Device").upsert(dataToInsert, { returning: 'minimal' });
+    
+    // Handle the result of the upsert operation if needed
+  } catch (error) {
+    console.error('Error fetching or uploading data:', error);
   }
-})
-.then((data) => {
-  ip = data.ip;
-});
-  
-const dataToInsert = [
-  { Ip : ip,Browser : userAgent },
-]
-  const {data , error} = await SupbaseClient.from("Device").upsert(dataToInsert , {returning : 'minimal'});
-  
+}
 
- }
  
   return  <ModeContext> <Layout>
     <Component {...pageProps} />
