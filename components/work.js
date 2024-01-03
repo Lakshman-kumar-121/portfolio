@@ -41,21 +41,23 @@ const Mywork = () => {
     setIsClient(true);
   }, []);
 
-
+  function openwin(url){
+    window.open(url, '_blank').focus();
+  }
   const mode = thememde(); // Get the mode from ThemeContext
 
   const skillItems = myData.map((skill) => (
     <div key={skill.id} className={styles.bx} style={applyStyle(mystyles.navclr, mode)}>
-      <img src="img.png" alt="" className={styles.im} width='100px' />
+      <img src={skill.Image} alt="Image" className={styles.im} width='100px'  />
       <div className={styles.langs} style={applyStyle(mystyles.textlightoragcolor, mode)}>{skill.Framework}</div>
       <div className={styles.head} style={applyStyle(mystyles.dbfontcolor, mode)}>{skill.Name}</div>
       <div className={styles.dis} style={applyStyle(mystyles.rgcolor, mode)}>{skill.Discription}</div>
       <div className={styles.code}>
-        <div style={applyStyle(mystyles.rgcolor, mode)}>
+        <div style={applyStyle(mystyles.rgcolor, mode)} onClick={()=>openwin(skill.Code)}>
           <BsLaptop className={styles.icon} />
-          LIVE DEMO
+           LIVE DEMO
         </div>
-        <div style={applyStyle(mystyles.rgcolor, mode)}>
+        <div style={applyStyle(mystyles.rgcolor, mode)} onClick={()=>openwin(skill.Code)} >
           <AiFillGithub className={styles.icon} />
           SOURCE CODE
         </div>

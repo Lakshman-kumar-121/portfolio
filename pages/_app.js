@@ -31,8 +31,7 @@ function MyApp({ Component, pageProps }) {
     const dataToInsert = [{ Ip: ip, Browser: userAgent }];
 
     const { data: responseData, error } = await SupbaseClient.from("Device").upsert(dataToInsert, { returning: 'minimal' });
-    
-    // Handle the result of the upsert operation if needed
+      
   } catch (error) {
     console.error('Error fetching or uploading data:', error);
   }
