@@ -28,10 +28,11 @@ export default function Home() {
       <HomeCont></HomeCont>
       
       <Aboutme></Aboutme>
+      <Services/>
       <Skill/>
       <Mywork/>
       <Contactme/>
-      <Services></Services>
+      
       
 
     </div>

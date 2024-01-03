@@ -49,6 +49,12 @@ color : '#1463B9'
     },
     greencolor : {
         color : '#59C378'
+    },
+    borderblack: {
+        border :  '2px dashed rgb(80, 80, 80)'
+    },
+    blackline:{
+        backgroundColor:'rgb(80, 80, 80)'
     }
 
 };
