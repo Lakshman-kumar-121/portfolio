@@ -41,7 +41,7 @@ const HomeCont = () => {
                 </a>
             </div>
             </div>
-            <div><img src="new.png" alt="" style={applyStyle(mystyles.pic, mode)} className={styles.img} /></div>
+            <div  ><img  data-aos="fade-left" data-aos-duration="800" src="new.png" alt=""  style={applyStyle(mystyles.pic, mode)} className={styles.img} /></div>
             </div>
         </div>
     );

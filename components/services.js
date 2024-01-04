@@ -6,10 +6,10 @@ const Services = () => {
   const applyStyle = (style, condition) => (condition ? style : null);
     return (  
         <div className={styles.skbg} id="Service" style={applyStyle(mystyles.bgclr, mode)} >
-        <div className={styles.myskil} style={applyStyle(mystyles.textoragcolor, mode)} >WHAT SERVICE I OFFER YOU </div>
-        <div className={styles.mysl}  style={applyStyle(mystyles.dbfontcolor, mode)} >Services</div>
-        <div className={styles.bxshow} style={applyStyle(mystyles.borderblack, mode)} >
-          <div className={styles.outrbox}>
+        <div className={styles.myskil} style={applyStyle(mystyles.textoragcolor, mode)} data-aos="fade-up" data-aos-duration="800"  >WHAT SERVICE I OFFER YOU </div>
+        <div className={styles.mysl}  style={applyStyle(mystyles.dbfontcolor, mode)}  data-aos="fade-up" data-aos-duration="800">Services</div>
+        <div className={styles.bxshow} style={applyStyle(mystyles.borderblack, mode)} data-aos="fade-in" data-aos-duration="800">
+          <div className={styles.outrbox} >
             <div className={styles.svicehd} style={applyStyle(mystyles.textoragcolor, mode)} >Frontend tools</div>
             <div className={styles.svice}style={applyStyle(mystyles.rgcolor, mode)} >Reactjs</div>
             < div className={styles.svice} style={applyStyle(mystyles.rgcolor, mode)}>Nextjs</div>
