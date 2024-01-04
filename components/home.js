@@ -1,9 +1,9 @@
-import Main from "@/components/sc";
+import Scrolltotop from "@/components/sc";
 
 import styles from '../styles/Home.module.css';
 import { AiOutlineTwitter, AiOutlineInstagram, AiOutlineWhatsApp, AiOutlineSend } from 'react-icons/ai';
 import { BiLogoLinkedin } from 'react-icons/bi';
-import Themeic from '@/components/theme';
+import Themechange from '@/components/theme';
 import mystyles from "./styles";
 import { useContext, useState } from "react";
 import useHover from "./btnhover";
@@ -18,8 +18,10 @@ const HomeCont = () => {
 
     return (
         <div className={styles.bg} style={applyStyle(mystyles.bgclr, mode)}>
-            <Main></Main>
-            <Themeic></Themeic>
+            <Scrolltotop></Scrolltotop>
+            <Themechange></Themechange>
+            <div className={styles.content}>
+            <div>
             <div className={styles.soft} style={applyStyle(mystyles.textlightoragcolor, mode)}data-aos="fade-down" data-aos-duration="1000" >SOFTWARE DEVELOPER</div>
             <div className={styles.hey} style={applyStyle(mystyles.dbfontcolor, mode)}data-aos="fade-down" data-aos-duration="1000" >Hey! I Am </div>
             <div className={styles.lak} style={applyStyle(mystyles.textlightoragcolor, mode)} data-aos="fade-down" data-aos-duration="1000">Lakshman K </div>
@@ -37,6 +39,9 @@ const HomeCont = () => {
                 <a href="">
                     <BiLogoLinkedin className={styles.log} style={applyStyle(mystyles.dbfontcolor, mode)}></BiLogoLinkedin>
                 </a>
+            </div>
+            </div>
+            <div><img src="new.png" alt="" style={applyStyle(mystyles.pic, mode)} className={styles.img} /></div>
             </div>
         </div>
     );

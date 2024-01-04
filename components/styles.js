@@ -55,6 +55,13 @@ color : '#1463B9'
     },
     blackline:{
         backgroundColor:'rgb(80, 80, 80)'
+    },
+    pic:{
+        filter:'drop-shadow(1px 1px 0 rgb(20,20, 20)) drop-shadow(-1px -1px 0 rgb(20, 20, 20)) grayscale(30%)'
+        ,position: 'absolute'
+        ,right: '0px',
+        width:'38%',
+        borderBottom: '2px solid rgb(80, 80, 80)'
     }
 
 };
