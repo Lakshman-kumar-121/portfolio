@@ -56,7 +56,7 @@ font-weight: 400;
     margin-right: 10px;
     content: "\27A4"; 
 } 
-@media (max-width: 1100px) {
+@media (max-width: 767px) {
     .hline{
         /* display: none; */
         height: 2px;
